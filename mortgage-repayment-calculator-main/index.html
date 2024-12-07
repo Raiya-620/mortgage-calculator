@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="main-card">
+      <div class="calculation-section">
+        <div class="header-section">
+          <h3>Mortgage Calculator</h3>
+          <p>Clear All</p>
+        </div>
+        <div class="Mortgage-amount">
+          <p id="mortgage-amount">Mortgage Amount</p>
+          <input type="number" id="mortgageAmount" required />
+          <div>£</div>
+          <p id="required-message1" class="hidden">This field is required</p>
+        </div>
+        <div class="team-and-rate">
+          <div class="Mortgage-team">
+            <p>Mortgage Term</p>
+            <input type="number" id="mortgageTerm" required />
+            <div>years</div>
+            <p id="required-message2" class="hidden">This field is required</p>
+          </div>
+          <div class="Mortgage-rate">
+            <p>Interest Rate</p>
+            <input type="number" id="interestRate" required />
+            <div>%</div>
+            <p id="required-message3" class="hidden">This field is required</p>
+          </div>
+        </div>
+        <div class="Mortgage-type">
+          <p>Mortgage Type</p>
+          <div id="radio-button">
+            <input type="radio" /><label for="">Repayment</label><br />
+          </div>
+          <div id="radio-button">
+            <input type="radio" /> <label for="">Interest Only</label>
+          </div>
+        </div>
+        <div class="calculate-button" id="calculate-button">
+          <img src="assets/images/icon-calculator.svg" alt="" />
+          <p>Calculate Repayments</p>
+        </div>
+      </div>
+      <div class="result-screen">
+        <div class="design-content">
+          <img src="assets/images/illustration-empty.svg" alt="" />
+          <h4>Results shown here</h4>
+          <p>
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+        <div class="result-display">
+          <h2>Your results</h2>
+          <p>
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click “calculate
+            repayments” again
+          </p>
+          <div class="total-display">
+            <div id="display-header"></div>
+            <div id="display-footer">
+              <p>Your monthly repayments</p>
+              <h1>£ 1,797.74</h1>
+              <hr />
+              <p>Total you'll repay over the term</p>
+              <h2>£ 539 ,322.94</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="index.js"></script>
+  </body>
+</html>

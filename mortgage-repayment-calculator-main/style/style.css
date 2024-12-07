@@ -1,0 +1,243 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(202, 86%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-card {
+  width: 50%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.calculation-section {
+  display: block;
+  padding: 25px;
+  width: 50%;
+}
+.header-section {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+.Mortgage-amount {
+  display: inline;
+}
+.Mortgage-amount div {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  padding-left: 7px;
+  width: 35px;
+  height: 25px;
+  background-color: hsl(202, 86%, 94%);
+
+  top: -4%;
+  left: 6.5%;
+
+  transform: translate(-50%, -50%);
+}
+
+.Mortgage-team div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 45px;
+  height: 25px;
+  background-color: hsl(202, 86%, 94%);
+  top: -16%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+}
+.Mortgage-rate div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 25px;
+  background-color: hsl(202, 86%, 94%);
+  top: -16%;
+  left: 86%;
+  transform: translate(-50%, -50%);
+}
+#mortgage-amount {
+  padding-bottom: 8px;
+}
+.Mortgage-amount input[type="number"] {
+  padding: 6px;
+  width: 21.5vw;
+  border-radius: 4px;
+  border-color: hsl(200, 24%, 40%);
+  padding-left: 50px;
+}
+.Mortgage-amount input[type="number"]:hover {
+  border-color: hsl(61, 70%, 52%);
+  cursor: pointer;
+}
+#required-message1 {
+  position: relative;
+  top: -20px;
+  display: none;
+  color: red;
+}
+#required-message2 {
+  position: relative;
+  color: red;
+  top: -20px;
+  display: none;
+}
+#required-message3 {
+  position: relative;
+  color: red;
+  top: -20px;
+  display: none;
+}
+h4 {
+  color: hsl(202, 86%, 94%);
+}
+h2 {
+  color: hsl(202, 86%, 94%);
+}
+h3 {
+  color: hsl(202, 55%, 16%);
+}
+h1 {
+  color: hsl(61, 70%, 52%);
+}
+p {
+  color: hsl(200, 24%, 40%);
+}
+.header-section p {
+  text-decoration: underline;
+}
+.result-display {
+  display: block;
+  align-items: center;
+}
+.total-display {
+  border-radius: 6px;
+
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 30vh;
+  margin: 20px 8px 30px 8px;
+  background-color: hsl(202, 55%, 10%);
+}
+#display-header {
+  height: 3px;
+  background-color: hsl(61, 70%, 52%);
+  border-radius: 6px 6px 0px 0px;
+}
+#display-footer {
+  display: block;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+#display-footer p {
+  padding-bottom: 8px;
+  padding-top: 10px;
+}
+#display-footer h1 {
+  padding-bottom: 10px;
+}
+
+.team-and-rate {
+  display: flex;
+  gap: 20px;
+}
+.Mortgage-type {
+  display: block;
+}
+.calculate-button {
+  display: flex;
+}
+
+.Mortgage-team p {
+  padding-bottom: 8px;
+}
+.Mortgage-team input[type="number"] {
+  padding: 6px;
+  width: 10vw;
+  border-radius: 4px;
+  border-color: hsl(200, 24%, 40%);
+}
+.Mortgage-rate p {
+  padding-bottom: 8px;
+}
+.Mortgage-rate input[type="number"] {
+  padding: 6px;
+  width: 10vw;
+  border-radius: 4px;
+  border-color: hsl(200, 24%, 40%);
+}
+.Mortgage-type p {
+  padding-bottom: 8px;
+}
+
+#radio-button {
+  margin-bottom: 8px;
+  color: hsl(202, 55%, 16%);
+  display: flex;
+
+  gap: 7px;
+}
+.Mortgage-type div {
+  border: 2px solid hsl(200, 24%, 40%);
+  padding: 6px;
+  width: 21.5vw;
+  border-radius: 4px;
+}
+input[type="radio"] {
+  padding-right: 10px;
+}
+.calculate-button {
+  padding: 8px;
+  border-radius: 50px;
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(61, 70%, 52%);
+  margin: 25px 0px 10px 0px;
+}
+.calculate-button p {
+  color: hsl(202, 55%, 16%);
+}
+.result-screen {
+  background-color: hsl(202, 55%, 16%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+
+  border-radius: 0px 10px 10px 50px;
+  width: 50%;
+}
+.design-content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.design-content p {
+  font-size: 14px;
+  text-align: center;
+  color: hsl(203, 41%, 72%);
+}
